@@ -39,5 +39,6 @@
                 </div>
             </div>
         </div>
+        @extends('layouts.app')
     </body>
 </html>

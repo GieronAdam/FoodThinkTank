@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        FootThinkTank\Providers\AppServiceProvider::class,
+        FootThinkTank\Providers\AuthServiceProvider::class,
+        // FootThinkTank\Providers\BroadcastServiceProvider::class,
+        FootThinkTank\Providers\EventServiceProvider::class,
+        FootThinkTank\Providers\RouteServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
     ],
 

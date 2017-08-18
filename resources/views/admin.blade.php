@@ -8,10 +8,10 @@
                 <div class="panel-heading">Welcome {{ Auth::user()->name }}</div>
 
                 <div class="panel-body">
-                    Here will be some admin panel
-                </div>
-                <div class="panel-body__test">
-                    test test
+                    <h1>add post</h1>
+                    <div class="panel-body__wyswig">
+                        tu bedzie wyswig
+                    </div>
                 </div>
             </div>
         </div>

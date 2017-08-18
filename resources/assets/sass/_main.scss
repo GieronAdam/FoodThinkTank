@@ -50,10 +50,8 @@ html, body {
 }
 
 .panel-body {
-  border:1px solid black;
-  &__test {
+
+  &__wyswig {
     margin-left: 10px;
-    color: red;
-    border: 1px solid red;
   }
 }

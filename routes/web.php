@@ -21,8 +21,13 @@ Route::get('/admin', 'HomeController@index')->name('admin');
 
 
 Route::get('projects', array('as' => 'projects.index', 'uses' => 'ProjectsController@index'));
-Route::get('projects/add', array('as' => 'projects.create', 'uses' => 'ProjectsController@create'));
-Route::post('projects/store', array('as' => 'projects.store', 'uses' => 'ProjectsController@store'));
+Route::get('peoples', array('as' => 'peoples.index', 'uses' => 'ProjectsController@index'));
+Route::get('additional_activities', array('as' => 'additional_activities.index', 'uses' => 'ProjectsController@index'));
+Route::get('initiative', array('as' => 'initiative.index', 'uses' => 'ProjectsController@index'));
+Route::get('lab', array('as' => 'lab.index', 'uses' => 'ProjectsController@index'));
+Route::get('contact', array('as' => 'contact.index', 'uses' => 'ProjectsController@index'));
+Route::get('admin/add', array('as' => 'admin.create', 'uses' => 'ProjectsController@create'));
+Route::post('admin/store', array('as' => 'admin.store', 'uses' => 'ProjectsController@store'));
 Route::get('projects/edit/{id}', array('as' => 'projects.edit', 'uses' => 'ProjectsController@edit'));
 Route::patch('projects/update/{id}', array('as' => 'projects.update', 'uses' => 'ProjectsController@update'));
 Route::delete('projects/delete/{id}', array('as' => 'projects.destroy', 'uses' => 'ProjectsController@destroy'));

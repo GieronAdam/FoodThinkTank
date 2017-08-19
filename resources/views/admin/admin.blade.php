@@ -36,14 +36,17 @@
                 <div class="panel-heading">Welcome {{ Auth::user()->name }}</div>
 
                 <div class="panel-body">
-                    <h1>add post</h1>
+                    <a href="{{route('admin.create')}}">Create Post</a>
                     <div class="panel-body__wyswig">
-                        tu bedzie wyswig
+                        @include('admin.create')
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    @isset($success)
+        {{ $success }}
+    @endisset
 </div>
 @stop
 

@@ -1,16 +1,21 @@
 @include('includes.head')
 @include('includes.header')
-    @foreach($projects as $project)
-        <h1>{{$project->title}} </h1>
-        <p>{{$project->author}}</p>
-        <p>{{$project->short_description}}</p>
-        <p>{{$project->full_content}}</p>
+{{$path}}
+    @foreach($datas as $data)
+        <a href="{{route('projects.index')}}/{{$data->slug}}">
+            <h1>{{$data->title}} </h1>
+            <h4 style="color:red;">{{$data->category}}</h4>
+        </a>
+        <p>{{$data->author}}</p>
+        <p>{{$data->short_description}}</p>
+        <p>{{$data->full_content}}</p>
+
     @endforeach
 <!-- Showing Pagination Links -->
 <style>
     ul {display:inline-block}
     li {display:inline; padding:5px}
 </style>
-<div> {{ $projects->links() }} </div>
+<div> {{ $datas->links() }} </div>
 <!-- End Showing Pagination Links -->
 @include('includes.foot')

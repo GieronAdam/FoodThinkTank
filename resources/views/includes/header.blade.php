@@ -22,19 +22,19 @@
                             <a href="{{route('projects.index')}}">Projekty</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                            <a href="#">Ludzie</a>
+                            <a href="{{route('peoples.index')}}">Ludzie</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                            <a href="#">Działania dodatkowe</a>
+                            <a href="{{route('additional_activities.index')}}">Działania dodatkowe</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                            <a href="#">Pracownia</a>
+                            <a href="{{route('lab.index')}}">Pracownia</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                            <a href="#">Inicjatywy</a>
+                            <a href="{{route('initiative.index')}}">Inicjatywy</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                            <a href="#">Kontakt</a>
+                            <a href="{{route('contact.index')}}">Kontakt</a>
                         </li>
                     </ul>
                 </nav>

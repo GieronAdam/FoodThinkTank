@@ -24,3 +24,10 @@
 </div>
 </body>
 </html>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#summernote').summernote({
+            height:300,
+        });
+    });
+</script>

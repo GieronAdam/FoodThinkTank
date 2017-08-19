@@ -1,6 +1,4 @@
-<script src="{{ asset('js/app.js') }}"></script>
-<script src="{!!asset('css/summernote.css')!!}"></script>
-<script src="{!!asset('js/summernote.js')!!}"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function() {

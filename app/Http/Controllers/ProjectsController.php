@@ -16,7 +16,7 @@ class ProjectsController extends Controller
     {
         $path = $request->path();
         $itemsPerPage = 3;
-        $projects = Projects::orderBy('category', 'desc')->paginate($itemsPerPage);
+        $projects = Projects::orderBy('category', 'desc')->where('category',$path)->paginate($itemsPerPage);
 
         return view('pages.projects', array('datas' => $projects, 'path' => $path));
     }
@@ -62,7 +62,7 @@ class ProjectsController extends Controller
     public function show($slug)
     {
         $project = Projects::where('slug', $slug)->first();
-        return view('projects.show', array('project' => $project));
+        return view('pages.show', array('project' => $project));
     }
 
     /**

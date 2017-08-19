@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/summernote.css') }}" rel="stylesheet">
+
     <title>Food Think Tank</title>
 
     <link href="http://fonts.googleapis.com/css?family=Hind+Siliguri%7CPoppins%3A500&ver=1499783230" rel="stylesheet" type="text/css">

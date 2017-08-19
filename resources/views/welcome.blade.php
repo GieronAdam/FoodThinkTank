@@ -12,7 +12,7 @@
     <link href="http://fonts.googleapis.com/css?family=Hind+Siliguri%7CPoppins%3A500&ver=1499783230" rel="stylesheet" type="text/css">
     <!-- Styles -->
 </head>
-<body>
+<body class="header-style-1">
 <div class="main-wrapper clearfix">
 
     {{-- Header --}}
@@ -66,7 +66,7 @@
     <div class="search">
         <button id="btn-search-close" class="btn--search-close"><i class="icon-themify-14"></i></button>
 
-        <form method="get" class="searchform search__form" action="http://www.foodthinktank.pl/" role="search">
+        <form method="get" class="searchform  search__form" action="http://www.foodthinktank.pl/" role="search">
             <input type="search" class="field search__input" name="s" value="" id="s" placeholder="Search">
             <button type="submit" class="submit search-button" value=""><i class="icon-simple-line-icons-143"></i></button>
         </form>

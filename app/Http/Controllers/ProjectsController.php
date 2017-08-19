@@ -12,12 +12,13 @@ class ProjectsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        $path = $request->path();
         $itemsPerPage = 3;
         $projects = Projects::orderBy('category', 'desc')->paginate($itemsPerPage);
 
-        return view('pages.projects', array('projects' => $projects, 'title' => 'Projects Display'));
+        return view('pages.projects', array('datas' => $projects, 'path' => $path));
     }
 
     /**

@@ -17,7 +17,7 @@ class ProjectsController extends Controller
         $itemsPerPage = 3;
         $projects = Projects::orderBy('created_at', 'desc')->paginate($itemsPerPage);
 
-        return view('projects.index', array('projects' => $projects, 'title' => 'Projects Display'));
+        return view('pages.projects', array('projects' => $projects, 'title' => 'Projects Display'));
     }
 
     /**

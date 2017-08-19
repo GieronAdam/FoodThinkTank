@@ -1,4 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.admin')
+@include('includes.head')
+@section('admin')
 <ul class="nav navbar-nav navbar-right">
     <!-- Authentication Links -->
     @if (Auth::guest())
@@ -25,6 +27,7 @@
         </li>
     @endif
 </ul>
+@stop
 @section('content')
 <div class="container">
     <div class="row">
@@ -42,4 +45,6 @@
         </div>
     </div>
 </div>
-@endsection
+@stop
+
+@include('includes.foot')

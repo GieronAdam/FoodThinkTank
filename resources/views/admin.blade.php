@@ -10,7 +10,6 @@
                 <div class="panel-body">
                     <h1>add post</h1>
                     <div class="panel-body__wyswig">
-                        tu bedzie wyswig
                     </div>
                 </div>
             </div>

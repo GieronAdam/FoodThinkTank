@@ -39,6 +39,6 @@
                 </div>
             </div>
         </div>
-        @extends('layouts.app')
+        {{--@extends('layouts.app')--}}
     </body>
 </html>

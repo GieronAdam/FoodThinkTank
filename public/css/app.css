@@ -8376,18 +8376,10 @@ body {
           justify-content: center;
 }
 
-.position-ref {
-  position: relative;
-}
-
 .top-right {
   position: absolute;
   right: 10px;
   top: 18px;
-}
-
-.content {
-  text-align: left;
 }
 
 .title {
@@ -8406,9 +8398,5 @@ body {
 
 .m-b-md {
   margin-bottom: 30px;
-}
-
-.panel-body__wyswig {
-  margin-left: 10px;
 }
 

@@ -8,7 +8,7 @@
         @yield('admin')
     </div>
     <header class="row">
-        @include('includes.header')
+
     </header>
     <div id="main" class="row">
 

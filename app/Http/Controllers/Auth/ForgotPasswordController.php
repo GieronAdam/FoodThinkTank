@@ -1,8 +1,8 @@
 <?php
 
-namespace FootThinkTank\Http\Controllers\Auth;
+namespace FoodThinkTank\Http\Controllers\Auth;
 
-use FootThinkTank\Http\Controllers\Controller;
+use FoodThinkTank\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
 
 class ForgotPasswordController extends Controller

@@ -1,9 +1,9 @@
 <?php
 
-namespace FootThinkTank\Http\Controllers\Auth;
+namespace FoodThinkTank\Http\Controllers\Auth;
 
-use FootThinkTank\User;
-use FootThinkTank\Http\Controllers\Controller;
+use FoodThinkTank\User;
+use FoodThinkTank\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -58,7 +58,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \FootThinkTank\User
+     * @return \FoodThinkTank\User
      */
     protected function create(array $data)
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace FootThinkTank\Http\Controllers;
+namespace FoodThinkTank\Http\Controllers;
 
-use FootThinkTank\Projects;
+use FoodThinkTank\Projects;
 use Illuminate\Http\Request;
 
 class ProjectsController extends Controller
@@ -15,7 +15,7 @@ class ProjectsController extends Controller
     public function index()
     {
         $itemsPerPage = 3;
-        $projects = Projects::orderBy('created_at', 'desc')->paginate($itemsPerPage);
+        $projects = Projects::orderBy('category', 'desc')->paginate($itemsPerPage);
 
         return view('pages.projects', array('projects' => $projects, 'title' => 'Projects Display'));
     }

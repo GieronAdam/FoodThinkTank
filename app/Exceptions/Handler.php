@@ -1,6 +1,6 @@
 <?php
 
-namespace FootThinkTank\Exceptions;
+namespace FoodThinkTank\Exceptions;
 
 use Exception;
 use Illuminate\Auth\AuthenticationException;

@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => FootThinkTank\User::class,
+            'model' => FoodThinkTank\User::class,
         ],
 
         // 'users' => [

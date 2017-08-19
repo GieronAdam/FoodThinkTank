@@ -1,6 +1,6 @@
 <?php
 
-namespace FootThinkTank\Http\Controllers;
+namespace FoodThinkTank\Http\Controllers;
 
 use Illuminate\Http\Request;
 

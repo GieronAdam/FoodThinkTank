@@ -1,6 +1,6 @@
 <?php
 
-namespace FootThinkTank\Providers;
+namespace FoodThinkTank\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'FootThinkTank\Model' => 'FootThinkTank\Policies\ModelPolicy',
+        'FoodThinkTank\Model' => 'FoodThinkTank\Policies\ModelPolicy',
     ];
 
     /**

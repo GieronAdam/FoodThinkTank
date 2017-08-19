@@ -1,6 +1,6 @@
 <?php
 
-namespace FootThinkTank;
+namespace FoodThinkTank;
 
 use Illuminate\Database\Eloquent\Model;
 

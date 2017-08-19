@@ -1,6 +1,6 @@
 <?php
 
-namespace FootThinkTank;
+namespace FoodThinkTank;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;

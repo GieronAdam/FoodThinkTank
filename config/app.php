@@ -171,12 +171,13 @@ return [
         /*
          * Application Service Providers...
          */
-        FootThinkTank\Providers\AppServiceProvider::class,
-        FootThinkTank\Providers\AuthServiceProvider::class,
-        // FootThinkTank\Providers\BroadcastServiceProvider::class,
-        FootThinkTank\Providers\EventServiceProvider::class,
-        FootThinkTank\Providers\RouteServiceProvider::class,
+        FoodThinkTank\Providers\AppServiceProvider::class,
+        FoodThinkTank\Providers\AuthServiceProvider::class,
+        // FoodThinkTank\Providers\BroadcastServiceProvider::class,
+        FoodThinkTank\Providers\EventServiceProvider::class,
+        FoodThinkTank\Providers\RouteServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
     ],
 
     /*
@@ -225,7 +226,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];

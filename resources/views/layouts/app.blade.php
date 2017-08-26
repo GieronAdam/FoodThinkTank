@@ -2,7 +2,7 @@
 <head>
     @include('includes.head')
 </head>
-<body>
+<body class="header-style-1">
 <div class="container">
 
     <header class="row">
@@ -15,7 +15,7 @@
     </div>
 
     <footer class="row">
-        @include('includes.foot')
+        {{--@include('includes.foot')--}}
     </footer>
 
 </div>

@@ -1,4 +1,3 @@
-
 {{-- Header --}}
 <header id="header" class="header-style-1-wrap inner-head-wrap clearfix">
     <div class="container clearfix">
@@ -47,17 +46,17 @@
 </header>
 
 {{-- SEARCH --}}
-{{--<div class="search">--}}
-    {{--<button id="btn-search-close" class="btn--search-close"><i class="icon-themify-14"></i></button>--}}
+<div class="search" style="display: none;">
+    <button id="btn-search-close" class="btn--search-close"><i class="icon-themify-14"></i></button>
 
-    {{--<form method="get" class="searchform  search__form" action="http://www.foodthinktank.pl/" role="search">--}}
-        {{--<input type="search" class="field search__input" name="s" value="" id="s" placeholder="Search">--}}
-        {{--<button type="submit" class="submit search-button" value=""><i class="icon-simple-line-icons-143"></i></button>--}}
-    {{--</form>--}}
-    {{--<span class="search__info">Hit enter to search or ESC to close</span>--}}
+    <form method="get" class="searchform  search__form" action="http://www.foodthinktank.pl/" role="search">
+        <input type="search" class="field search__input" name="s" value="" id="s" placeholder="Search">
+        <button type="submit" class="submit search-button" value=""><i class="icon-simple-line-icons-143"></i></button>
+    </form>
+    <span class="search__info">Hit enter to search or ESC to close</span>
 
-    {{--<div class="search__related">--}}
-        {{--<div class="search__suggestion">--}}
-        {{--</div>--}}
-    {{--</div>--}}
-{{--</div>--}}
+    <div class="search__related">
+        <div class="search__suggestion">
+        </div>
+    </div>
+</div>

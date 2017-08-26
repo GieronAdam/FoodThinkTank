@@ -24,11 +24,11 @@
         </tr>
         <tr>
             <td valign="top">{!! Form::label('short_description', 'Short Description', ['class' => 'control-label']) !!}</td>
-            <td>{!! Form::textarea('short_description', null, ['class' => 'form-control']) !!}</td>
+            <td>{!! Form::textarea('short_description', null, ['class' => 'form-control tinymce']) !!}</td>
         </tr>
         <tr>
             <td valign="top">{!! Form::label('full_content', 'Full Content', ['class' => 'control-label']) !!}</td>
-            <td>{!! Form::textarea('full_content', null, ['class' => 'form-control','id' => 'summernote']) !!}</td>
+            <td>{!! Form::textarea('full_content', null, ['class' => 'form-control tinymce']) !!}</td>
         </tr>
         <tr>
             <td></td>

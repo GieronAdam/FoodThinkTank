@@ -5,6 +5,7 @@ namespace FoodThinkTank\Http\Controllers;
 use FoodThinkTank\Projects;
 use Illuminate\Http\Request;
 use Session;
+use \Illuminate\Support\HtmlString as HTML;
 
 class ProjectsController extends Controller
 {

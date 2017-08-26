@@ -67,7 +67,7 @@ return [
     | Upload / Validation
     |--------------------------------------------------------------------------
     */
-
+    
     // If true, the uploaded file will be renamed to uniqid() + file extension.
     'rename_file' => false,
 

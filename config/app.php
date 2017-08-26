@@ -180,6 +180,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Unisharp\Laravelfilemanager\LaravelFilemanagerServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+
     ],
 
     /*

@@ -87,4 +87,4 @@
 
     tinymce.init(editor_config);
 </script>
-@include('includes.foot')
+

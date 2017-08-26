@@ -18,4 +18,3 @@
 </style>
 <div> {{ $datas->links() }} </div>
 <!-- End Showing Pagination Links -->
-@include('includes.foot')

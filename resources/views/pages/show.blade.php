@@ -8,10 +8,9 @@
 @endsection
 
 @section('content')
-    <h1>{{ $project->title }}</h1>
-
-    Category: {!! $project->category !!} | Author: {{ $project->author }} | Published on: {{ $project->created_at }}
-
-    <p>{!! $project->full_content !!}</p>
-
+    <div class="container">
+        <h1>{{ $project->title }}</h1>
+        Category: {!! $project->category !!} | Author: {{ $project->author }} | Published on: {{ $project->created_at }}
+        <p>{!! $project->full_content !!}</p>
+    </div>
 @endsection

@@ -3,18 +3,18 @@
     @include('includes.head')
 </head>
 <body class="header-style-1">
-<div class="container">
+<div>
 
-    <header class="row">
+    <header >
         @include('includes.header')
     </header>
-    <div id="main" class="row">
+    <div id="main">
 
         @yield('content')
 
     </div>
 
-    <footer class="row">
+    <footer>
         {{--@include('includes.foot')--}}
     </footer>
 

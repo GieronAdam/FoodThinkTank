@@ -3,8 +3,8 @@
     @include('includes.head')
 </head>
 <body>
-<div class="container">
-    <div class="row">
+<div>
+    <div>
         @yield('admin')
     </div>
     <header class="row">

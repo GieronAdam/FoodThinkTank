@@ -32,3 +32,7 @@ Route::get('projects/edit/{id}', array('as' => 'projects.edit', 'uses' => 'Proje
 Route::patch('projects/update/{id}', array('as' => 'projects.update', 'uses' => 'ProjectsController@update'));
 Route::delete('projects/delete/{id}', array('as' => 'projects.destroy', 'uses' => 'ProjectsController@destroy'));
 Route::get('projects/{slug}', array('as' => 'projects.show', 'uses' => 'ProjectsController@show'));
+
+
+
+Route::resource('admin/users', 'AdminUsersController');

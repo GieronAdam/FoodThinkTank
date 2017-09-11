@@ -6,6 +6,8 @@
     <div class="container">
         <h4 class="section-title">Create a User</h4>
 
+        @include('includes.forms.error')
+
         {!! Form::open(['method' => 'POST', 'action' => 'AdminUsersController@store']) !!}
 
         <div class="col-sm-6 col-xs-12">

@@ -2,6 +2,7 @@
 
 namespace FoodThinkTank\Http\Controllers;
 
+use FoodThinkTank\Http\Requests\AdminUsersRequest;
 use Illuminate\Http\Request;
 use FoodThinkTank\User;
 use FoodThinkTank\Role;
@@ -38,7 +39,7 @@ class AdminUsersController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(AdminUsersRequest $request)
     {
         return $request->all();
     }

@@ -4,6 +4,7 @@ namespace FoodThinkTank\Http\Controllers;
 
 use Illuminate\Http\Request;
 use FoodThinkTank\User;
+use FoodThinkTank\Role;
 class AdminUsersController extends Controller
 {
     /**
@@ -26,7 +27,9 @@ class AdminUsersController extends Controller
      */
     public function create()
     {
-        //
+        $roles = Role::pluck('name', 'id')->all();
+
+        return view('admin.users.create', compact('roles'));
     }
 
     /**
@@ -37,7 +40,7 @@ class AdminUsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return $request->all();
     }
 
     /**

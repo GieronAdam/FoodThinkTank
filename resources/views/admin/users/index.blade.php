@@ -16,6 +16,7 @@
                 <th>Is Active?</th>
                 <th>Created At</th>
                 <th>Updated At</th>
+                <th colspan="2">Action</th>
             </tr>
             </thead>
             <tbody>
@@ -32,6 +33,7 @@
                     <td>{{$user->is_active == 1 ? 'Active' : 'No active'}}</td>
                     <td>{{$user->created_at->diffForHumans()}}</td>
                     <td>{{$user->updated_at}}</td>
+                    <td colspan="2"><a href="{{route('users.edit', $user->id)}}" class="btn btn-secondary">Edit</a></td>
                 </tr>
 
                 @endforeach

@@ -13,6 +13,21 @@
                 Dashboard</span>
                 </a>
             </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Users">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseUsers" data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa-wrench"></i>
+                    <span class="nav-link-text">
+                Users</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapseUsers">
+                    <li>
+                        <a href="{!! route('users.index') !!}">All Users</a>
+                    </li>
+                    <li>
+                        <a href="{!! route('users.create') !!}">Create a new User</a>
+                    </li>
+                </ul>
+            </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
                 <a class="nav-link" href="#">
                     <i class="fa fa-fw fa-area-chart"></i>

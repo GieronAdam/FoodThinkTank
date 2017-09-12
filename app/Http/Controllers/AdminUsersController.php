@@ -112,7 +112,7 @@ class AdminUsersController extends Controller
             }
             $user->update($input);
 
-            return redirect('admin/users');
+            return redirect('admin/users')->with('status', 'Artykuł został edytowany');
     }
 
     /**

@@ -5,6 +5,13 @@
     <div class="container">
         <h4 class="section-title">Users</h4>
         <p>Tabela uzytkownikow</p>
+
+        @if (session('status'))
+             <div data-alert class="alert-box success">
+                 {{ session('status') }}
+             </div>
+        @endif
+
         <table class="table">
             <thead>
             <tr>

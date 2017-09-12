@@ -14,5 +14,8 @@ class Photo extends Model
     {
         return $this->hasMany('FoodThinkTank\User');
     }
-
+    public function photos()
+    {
+        return $this->hasMany('FoodThinkTank\Post');
+    }
 }

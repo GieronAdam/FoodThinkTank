@@ -10,6 +10,7 @@
             <tr>
                 <th>Id</th>
                 <th>Name</th>
+                <th>Photo</th>
                 <th>E-mail</th>
                 <th>Role</th>
                 <th>Is Active?</th>
@@ -25,6 +26,7 @@
                 <tr>
                     <td>{{$user->id}}</td>
                     <td>{{$user->name}}</td>
+                    <td><img src="/images/{{$user->photo ? $user->photo->file : 'no photos'}}" alt="" height="50"></td>
                     <td>{{$user->email}}</td>g
                     <td>{{$user->role->name}}</td>
                     <td>{{$user->is_active == 1 ? 'Active' : 'No active'}}</td>

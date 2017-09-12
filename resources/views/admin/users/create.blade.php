@@ -8,7 +8,7 @@
 
         @include('includes.forms.error')
 
-        {!! Form::open(['method' => 'POST', 'action' => 'AdminUsersController@store']) !!}
+        {!! Form::open(['method' => 'POST', 'action' => 'AdminUsersController@store', 'files' => true]) !!}
 
         <div class="col-sm-6 col-xs-12">
             <div class="form-group">
@@ -24,6 +24,11 @@
             <div class="form-group">
                 {!! Form::label('password', 'Password') !!}
                 {!! Form::password('password', ['class' => 'form-control']) !!}
+            </div>
+
+            <div class="form-group">
+                {!! Form::label('photo_id', 'Photo') !!}
+                {!! Form::file('photo_id', null, ['class' => 'form-control']) !!}
             </div>
 
             <div class="form-group">

@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/admin', 'HomeController@index')->name('admin');
+//Route::get('/admin', 'HomeController@index')->name('admin');
 
 
 Route::get('projects', array('as' => 'projects.index', 'uses' => 'ProjectsController@index'));

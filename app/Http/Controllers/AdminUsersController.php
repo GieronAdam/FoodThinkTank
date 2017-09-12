@@ -5,6 +5,7 @@ namespace FoodThinkTank\Http\Controllers;
 use FoodThinkTank\Http\Requests\AdminUsersRequest;
 use Illuminate\Http\Request;
 use FoodThinkTank\User;
+use FoodThinkTank\Photo;
 use FoodThinkTank\Role;
 class AdminUsersController extends Controller
 {
@@ -41,7 +42,19 @@ class AdminUsersController extends Controller
      */
     public function store(AdminUsersRequest $request)
     {
-        return $request->all();
+        $input = $request->all();
+
+        if($file = $request->file('photo_id')){
+            $name = time() . $file->getClientOriginalName();
+            $file->move('images', $name);
+            $photo = Photo::create(['file' => $name]);
+            $input['photo_id'] = $photo->id;
+        }
+        $input['password'] = bcrypt($request->password);
+        User::create($input);
+
+
+        return redirect('admin/users');
     }
 
     /**

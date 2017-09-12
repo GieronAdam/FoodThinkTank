@@ -35,4 +35,10 @@ Route::get('projects/{slug}', array('as' => 'projects.show', 'uses' => 'Projects
 
 
 
-Route::resource('admin/users', 'AdminUsersController');
+Route::group(['middleware' => 'admin'], function(){
+
+    Route::resource('admin/users', 'AdminUsersController');
+
+
+});
+

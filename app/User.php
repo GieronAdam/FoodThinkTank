@@ -35,4 +35,12 @@ class User extends Authenticatable
     {
         return $this->belongsTo('FoodThinkTank\Photo');
     }
+
+    public function isAdmin()
+    {
+        if($this->role->name == 'administrator'){
+            return true;
+        }
+        return false;
+    }
 }

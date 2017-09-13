@@ -51,5 +51,28 @@
         </table>
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-xs-12">
+                <div class="card">
+                    <div class="col-sm-12">
+                    <img class="card-img-top" src="..."  height="70px" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">User name</h4>
+                        <h5>email</h5>
+                        <p>Status: </p>
+                        <hr>
+                        <p>Role: </p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
 @endsection

@@ -28,6 +28,21 @@
                     </li>
                 </ul>
             </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Posts">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapsePosts" data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa-wrench"></i>
+                    <span class="nav-link-text">
+                Posts</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapsePosts">
+                    <li>
+                        <a href="{!! route('posts.index') !!}">All Posts</a>
+                    </li>
+                    <li>
+                        <a href="{!! route('posts.create') !!}">Create a new Post</a>
+                    </li>
+                </ul>
+            </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
                 <a class="nav-link" href="#">
                     <i class="fa fa-fw fa-area-chart"></i>

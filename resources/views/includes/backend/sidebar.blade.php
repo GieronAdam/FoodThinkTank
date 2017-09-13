@@ -43,6 +43,21 @@
                     </li>
                 </ul>
             </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Posts">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseCategories" data-parent="#exampleAccordion">
+                    <i class="fa fa-fw fa-wrench"></i>
+                    <span class="nav-link-text">
+                Categories</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapseCategories">
+                    <li>
+                        <a href="{!! route('categories.index') !!}">All Categories</a>
+                    </li>
+                    <li>
+                        <a href="{!! route('categories.create') !!}">Create a new Category</a>
+                    </li>
+                </ul>
+            </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
                 <a class="nav-link" href="#">
                     <i class="fa fa-fw fa-area-chart"></i>

@@ -4,7 +4,6 @@
 
     <div class="container">
         <h4 class="section-title">Posts</h4>
-        <p>Lista postów</p>
 
         @if (session('status'))
             <div data-alert class="alert-box success">
@@ -12,10 +11,10 @@
             </div>
         @endif
 
-        @if($posts)
+        @if(count($posts) >1 )
 
-        <table class="table">
-            <thead>
+        <table class="table table-striped">
+            <thead class="thead-inverse">
             <tr>
                 <th>Id</th>
                 <th>Title</th>
@@ -41,6 +40,7 @@
                         <td>{{$post->body}}</td>
                         <td>{{$post->created_at}}</td>
                         <td>{{$post->updated_at}}</td>
+                        <td><a href="{{route('posts.edit', $post->id)}}" class="btn btn-secondary">Edit</a></td>
                     </tr>
 
                 @endforeach
@@ -48,9 +48,14 @@
             </tbody>
         </table>
 
+        @else
+
+            <p>No posts</p>
+
+
         @endif
 
-        <p>No posts</p>
+
     </div>
 
 

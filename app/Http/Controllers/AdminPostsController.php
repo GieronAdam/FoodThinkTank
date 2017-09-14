@@ -77,7 +77,11 @@ class AdminPostsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Post::findOrFail($id);
+
+        $categories = Category::pluck('name', 'id')->all();
+
+        return view('admin.posts.edit', compact('post','categories'));
     }
 
     /**
@@ -100,6 +104,12 @@ class AdminPostsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Post::findOrFail($id);
+
+        unlink(public_path() . "/images/" . $post->photo->file);
+
+        $post->delete();
+
+        return redirect('/admin/posts')->with('status', 'Post has been deleted');
     }
 }

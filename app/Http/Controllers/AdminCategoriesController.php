@@ -82,7 +82,7 @@ class AdminCategoriesController extends Controller
 
         $category->update($input);
 
-        return redirect('admin/categories/')->with('status', 'Category has beed updated');
+        return redirect('admin/categories/')->with('status', 'Category has been updated');
     }
 
     /**

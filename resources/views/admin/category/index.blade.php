@@ -7,7 +7,7 @@
             <hr>
             @include('includes.forms.error')
             @if (session('status'))
-                <div data-alert class="alert-box success">
+                <div class="alert alert-success" role="alert">
                     {{ session('status') }}
                 </div>
             @endif

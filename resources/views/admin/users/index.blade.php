@@ -5,7 +5,7 @@
     <div class="container">
         <h4 class="section-title">Users</h4>
         @if (session('status'))
-             <div data-alert class="alert-box success">
+             <div class="alert alert-success" role="alert">
                  {{ session('status') }}
              </div>
         @endif

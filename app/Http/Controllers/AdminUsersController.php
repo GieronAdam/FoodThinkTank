@@ -57,7 +57,7 @@ class AdminUsersController extends Controller
         }
         User::create($input);
 
-        return redirect('admin/users');
+        return redirect('admin/users')->with('status', 'User has been created');
     }
 
     /**
@@ -112,7 +112,7 @@ class AdminUsersController extends Controller
             }
             $user->update($input);
 
-            return redirect('admin/users')->with('status', 'Artykuł został edytowany');
+            return redirect('admin/users')->with('status', 'User has been updated');
     }
 
     /**
@@ -129,6 +129,6 @@ class AdminUsersController extends Controller
 
         $user->delete();
 
-        return redirect('admin/users');
+        return redirect('admin/users')-with('status', 'User has been deleted');
     }
 }

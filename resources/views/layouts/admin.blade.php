@@ -53,6 +53,8 @@
         </div>
     </div>
 </div>
+
+        @include('includes.backend.tinyeditor')
 <script src="{{ asset('js/backend/sb-admin.js') }}"></script>
 </body>
 </html>

@@ -40,7 +40,7 @@
             <div class="form-group row">
                 {!! Form::label('body', 'Content', ['class' => 'col-2 col-form-label']) !!}
                 <div class="col-10">
-                    {!! Form::textarea('body', null, ['class' => 'form-control']) !!}
+                    {!! Form::textarea('body', null, ['class' => 'form-control tinymce']) !!}
                 </div>
             </div>
 

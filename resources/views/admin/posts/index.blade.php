@@ -33,11 +33,11 @@
 
                     <tr>
                         <td>{{$post->id}}</td>
-                        <td>{{$post->title}}</td>
+                        <td>{{str_limit($post->title,25)}}</td>
                         <td>{{$post->user->name}}</td>
                         <td><img src="/images/{{$post->photo ? $post->photo->file : 'no photos'}}" alt="" height="50"></td>
                         <td>{{$post->category->name}}</td>
-                        <td>{{$post->body}}</td>
+                        <td>{{str_limit($post->body,80)}}</td>
                         <td>{{$post->created_at}}</td>
                         <td>{{$post->updated_at}}</td>
                         <td><a href="{{route('posts.edit', $post->id)}}" class="btn btn-secondary">Edit</a></td>

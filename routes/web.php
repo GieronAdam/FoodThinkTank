@@ -17,9 +17,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-//Route::get('/admin', 'HomeController@index')->name('admin');
-
-
 Route::get('projects', array('as' => 'projects.index', 'uses' => 'ProjectsController@index'));
 Route::get('peoples', array('as' => 'peoples.index', 'uses' => 'ProjectsController@index'));
 Route::get('additional_activities', array('as' => 'additional_activities.index', 'uses' => 'ProjectsController@index'));
@@ -37,6 +34,7 @@ Route::get('projects/{slug}', array('as' => 'projects.show', 'uses' => 'Projects
 
 Route::group(['middleware' => 'admin'], function(){
 
+    Route::get('admin/', 'AdminHomeController@index');
     Route::resource('admin/users', 'AdminUsersController');
     Route::resource('admin/posts', 'AdminPostsController');
     Route::resource('admin/categories', 'AdminCategoriesController');

@@ -6,10 +6,11 @@ body {
 }
 .user-admin-card {
     text-align: center;
-    margin: 0;
+    margin-bottom: 30px;
 }
 .user-admin-card .card-title {
     margin: 0;
+    font-size: 15px;
     padding: 10px 0;
     font-weight: bold;
 }

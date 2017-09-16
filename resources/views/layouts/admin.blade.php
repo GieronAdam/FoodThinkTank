@@ -46,13 +46,20 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="login.html">Logout</a>
+                        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="btn btn-primary">
+                            Logout
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+        @include('includes.backend.tinyeditor')
 <script src="{{ asset('js/backend/sb-admin.js') }}"></script>
 </body>
 </html>

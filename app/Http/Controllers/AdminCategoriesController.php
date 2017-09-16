@@ -3,9 +3,8 @@
 namespace FoodThinkTank\Http\Controllers;
 
 use Illuminate\Http\Request;
-use FoodThinkTank\Post;
-
-class HomeController extends Controller
+use FoodThinkTank\Category;
+class AdminCategoriesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +13,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $posts = Post::orderBy('id','desc')->limit(3)->get();
+        $categories = Category::all();
 
-        return view('home.index',compact('posts'));
+        return view('admin.category.index', compact('categories'));
     }
 
     /**
@@ -26,7 +25,7 @@ class HomeController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.category.create');
     }
 
     /**
@@ -37,7 +36,12 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+
+        Category::create($input);
+
+        return redirect('admin/categories/')->with('status', 'Category has been created');
+
     }
 
     /**
@@ -59,7 +63,9 @@ class HomeController extends Controller
      */
     public function edit($id)
     {
-        //
+        $category = Category::findOrFail($id);
+
+        return view('admin.category.edit', compact('category'));
     }
 
     /**
@@ -71,7 +77,12 @@ class HomeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $category = Category::findOrFail($id);
+        $input =  $request->all();
+
+        $category->update($input);
+
+        return redirect('admin/categories/')->with('status', 'Category has been updated');
     }
 
     /**
@@ -82,6 +93,9 @@ class HomeController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $category = Category::findOrFail($id);
+        $category->delete();
+
+        return redirect('/admin/categories/')->with('status','Category has been deleted');
     }
 }

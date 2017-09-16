@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','role_id','is_active','photo_id'
     ];
 
     /**
@@ -26,4 +26,25 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function role()
+    {
+        return $this->belongsTo('FoodThinkTank\Role');
+    }
+    public function photo()
+    {
+        return $this->belongsTo('FoodThinkTank\Photo');
+    }
+
+    public function isAdmin()
+    {
+        if($this->role->name == 'administrator' && $this->is_active == 1){
+            return true;
+        }
+        return false;
+    }
+    public function posts()
+    {
+        return $this->hasMany('FoodThinkTank\Post');
+    }
 }

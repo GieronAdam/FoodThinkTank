@@ -18,4 +18,8 @@ class Photo extends Model
     {
         return $this->hasMany('FoodThinkTank\Post');
     }
+    public function events()
+    {
+        return $this->hasMany('FoodThinkTank\Events');
+    }
 }

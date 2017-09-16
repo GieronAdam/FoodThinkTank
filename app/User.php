@@ -47,4 +47,8 @@ class User extends Authenticatable
     {
         return $this->hasMany('FoodThinkTank\Post');
     }
+    public function events()
+    {
+        return $this->hasMany('FoodThinkTank\Event');
+    }
 }

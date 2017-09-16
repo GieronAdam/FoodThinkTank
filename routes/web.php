@@ -13,6 +13,9 @@
 
 
 Route::get('/', 'HomeController@index');
+Route::resource('/events', 'EventsController');
+Route::resource('/eventusers','EventUsersController');
+Route::resource('/users', 'UsersController');
 
 Auth::routes();
 
@@ -38,6 +41,7 @@ Route::group(['middleware' => 'admin'], function(){
     Route::resource('admin/posts', 'AdminPostsController');
     Route::resource('admin/categories', 'AdminCategoriesController');
     Route::resource('admin/media', 'AdminMediaController');
+    Route::resource('admin/events', 'AdminEventsController');
     Route::get('admin/media/upload', ['as' => 'admin.media.upload', 'uses' => 'AdminMediaController@upload']);
 
 });
